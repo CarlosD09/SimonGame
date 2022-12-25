@@ -5,11 +5,6 @@ let started = false;
 let levelNumber = 0;
 let successOrFailure;
 
-if (window.navigator.userAgentData.mobile === true){
-    alert("you're on mobile")
-}
-
-
 $(".btn").on("click", function(){
     const userChosenColor = $(this).attr("id"); 
 
