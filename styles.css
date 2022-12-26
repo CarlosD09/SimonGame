@@ -1,0 +1,155 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+  color: #FEF2BF;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5% 0 3% 0;
+  color: #FEF2BF;
+}
+
+#high-score {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  color: #949191;
+  margin: 0 0 5% 0;
+}
+
+.make-smaller {
+  /* animation: makeTextSmaller 2s ease; */
+  /* animation-name: makeTextSmaller !important;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+
+  animation-fill-mode: forwards;  *//* SO THE ANIMATION STAYS */
+
+  animation: makeTextSmaller 2s ease forwards;  /* between ease and forwards: delay iteration-count direction  */
+}
+
+.make-bigger{
+  animation-name: makeTextBigger !important;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+
+  animation-fill-mode: forwards; /* SO THE ANIMATION STAYS */
+
+  animation: makeTextBigger 2s ease forwards; /* between ease and forwards: delay iteration-count direction */
+}
+
+@keyframes makeTextSmaller {
+  0% {font-size: 2rem;}
+  100% {font-size: 1rem;}
+}
+
+@keyframes makeTextBigger {
+  0% {font-size: 1rem;}
+  100% {font-size: 2rem;}
+  
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 0 65px;
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.disable {
+  display: none;
+}
+
+
+
+
+
+
+.sequence-button {
+  font-family: 'Press Start 2P', cursive;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  text-shadow: 0px 0px 0px #7CACDE;
+  box-shadow: 1px 1px 1px #BEE2F9;
+  padding: 10px 25px;
+  border-radius: 15px;
+  border: 3px solid #494949;
+  background: #011F3F;
+  text-transform: uppercase;
+}
+
+.sequence-button:hover {
+  color: #000000 !important;
+  background: #FFFFFF;
+  text-transform: uppercase;
+}
+ 
+
+.btn-show-pattern {
+  color: #FEF2BF !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #011F3F;
+  padding: 20px;
+  border: 3px solid #494949 !important;
+  display: inline-block;
+  border-radius: 15px;
+  transition: all 0.4s ease 0s; 
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 50px;
+  cursor: pointer;
+  background-position: center;
+}
+
+.btn-show-pattern:hover {
+  color: #000 !important;
+  background: #FEF2BF radial-gradient(circle, transparent 1%, #FEF2BF 1%) center/15000%;
+  border-color: #FEF2BF !important;
+  transition: all 0.4s ease 0s;
+}
+
+.btn-show-pattern:active {
+  background-color: #000;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
